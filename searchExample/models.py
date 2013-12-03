@@ -39,9 +39,9 @@ class UserProfile(models.Model):
     
 class SaveThisSearch(models.Model):
     #searchid = models.IntegerField(max_length=1000, primary_key=True)
-    searchid = models.CharField(max_length=1000, primary_key=True)
+    #searchid = models.CharField(max_length=1000, primary_key=True)
     user = models.ForeignKey(User)
-    saved_searches = models.CharField(max_length=1000)
+    saved_searches = models.TextField()
     #saved_searches = models.CharField(max_length=1000)
     
     def __unicode__(self):
